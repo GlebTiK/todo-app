@@ -1,13 +1,20 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+body { margin: 0; font-family: system-ui, Arial, sans-serif; background: #0b0c10; color: #e5e7eb }
+a { color: #60a5fa; text-decoration: none }
+.container { max-width: 900px; margin: 0 auto; padding: 24px }
+.input { width: 100%; padding: 10px; margin: 8px 0; border-radius: 6px; border: 1px solid #374151; background: #111827; color: #e5e7eb }
+.button { padding: 10px 16px; border: 0; border-radius: 6px; background: #2563eb; color: white; cursor: pointer }
+.button.secondary { background: #374151 }
+.card { background: #111827; border: 1px solid #1f2937; padding: 16px; border-radius: 8px; margin-bottom: 12px }
+.row { display: flex; gap: 12px; align-items: center }
+.space { height: 12px }
+.nav { display: flex; gap: 12px; align-items: center; justify-content: space-between; margin-bottom: 16px }
+.list { display: flex; flex-direction: column; gap: 8px }
+.pagination { display: flex; gap: 8px; align-items: center; justify-content: flex-end; margin-top: 12px }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.slider-container { position: relative; width: 100%; height: 18px; border-radius: 6px; cursor: pointer; user-select: none; touch-action: none }
+.slider-track { position: absolute; inset: 0; background: var(--bs-secondary); border-radius: 6px }
+.slider-fill { position: absolute; inset: 0 auto 0 0; border-radius: 6px; width: 0 }
+
+::placeholder {
+    color: var(--white)
 }
